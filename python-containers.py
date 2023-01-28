@@ -15,3 +15,9 @@ print(student[4])
 foods = ('cake', 'chicken', 'steak', 'pie', 'chips')
 for x in foods:
     print(x, "is good food")
+
+# 3. Using a for loop, print just the last two food strings from foods.
+
+for i in range(-2,0):
+    print(foods[i])
+
