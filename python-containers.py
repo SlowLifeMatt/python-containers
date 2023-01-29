@@ -28,3 +28,20 @@ for i in range(-2,0):
 hometown = {'city':'Las Vegas','state':'Nevada','population':646790}
 print(f"I was born in {hometown['city']}, {hometown['state']} - population of {hometown['population']}")
 
+# 5. Iterate over the key: value pairs in home_town and print a string for each item, for example:
+#	"city = Arcadia"
+#	"state = California"
+#	"population = 58000"
+
+for key, val in hometown.items():
+	print( f"{key} = {val}" )
+
+# 6. Create an empty list named cohort.
+# Using a forloop, add one dictionary to the cohortlist for each student name. Each dictionary should have this shape:
+
+cohort = {
+	'student': 'Tina',
+	'fav_food': 'Cheeseburger'
+}
+for key, val in cohort.items():
+	print( f"{key} = {val}" )
