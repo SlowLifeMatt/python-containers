@@ -21,3 +21,10 @@ for x in foods:
 for i in range(-2,0):
     print(foods[i])
 
+# 4. Create a dictionary named home_town containing the keys of city, state and population.
+# Print a string with this format:
+# "I was born in city, state - population of population"
+
+hometown = {'city':'Las Vegas','state':'Nevada','population':646790}
+print(f"I was born in {hometown['city']}, {hometown['state']} - population of {hometown['population']}")
+
