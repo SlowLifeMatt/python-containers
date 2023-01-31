@@ -12,7 +12,7 @@ print(student[4])
 # 2. Create a tuple named foods containing the same number of foods (strings) as there are names in the students list.
 # Use a for loop to print out the string "food goes here is a good food".
 
-foods = ('cake', 'chicken', 'steak', 'pie', 'chips')
+foods = ('cake', 'chicken', 'ahi tuna', 'pie', 'chips')
 for x in foods:
     print(x, "is good food")
 
@@ -37,11 +37,12 @@ for key, val in hometown.items():
 	print( f"{key} = {val}" )
 
 # 6. Create an empty list named cohort.
-# Using a forloop, add one dictionary to the cohortlist for each student name. Each dictionary should have this shape:
+# Using a forloop, add one dictionary to the cohort list for each student name. Each dictionary should have this shape:
+cohort = []
+for idx, students in enumerate(student):
+    cohort.append({
+        'student': students,
+        'fav_food': foods[idx]
+    })
+    print(cohort[idx])
 
-cohort = {
-	'student': 'Tina',
-	'fav_food': 'Cheeseburger'
-}
-for key, val in cohort.items():
-	print( f"{key} = {val}" )
