@@ -52,3 +52,9 @@ for idx, students in enumerate(student):
 
 awesome_students = [f"{students} is awesome!" for students in student]
 print(awesome_students)
+
+# 8. Using the tuple foods and list comprehension within a forloop, print each food string that contains the letter a.
+
+for food in foods:
+    if 'a' in food:
+        print(food)
